@@ -3,7 +3,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { config } from 'src/config';
 import { AuthController } from './controllers/auth.controller';
 import { UserModule } from '../user/user.module';
-import { AuthCRUDApplication } from './applications/auth-crud.application';
+import { AuthApplication } from './applications/auth.application';
 
 @Module({
   imports: [
@@ -14,6 +14,6 @@ import { AuthCRUDApplication } from './applications/auth-crud.application';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthCRUDApplication],
+  providers: [AuthApplication],
 })
 export class AuthModule {}

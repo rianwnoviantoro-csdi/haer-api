@@ -14,7 +14,7 @@ import { JwtService } from '@nestjs/jwt';
 import { config } from 'src/config';
 
 @Injectable()
-export class AuthCRUDApplication {
+export class AuthApplication {
   constructor(
     private readonly userService: UserService,
     private readonly jwtService: JwtService,
